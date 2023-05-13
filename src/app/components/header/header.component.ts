@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/services/persona.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private router: Router) {}
+  persona: Persona = new Persona('', '', '');
+  constructor(private router: Router, public personaService: PersonaService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.personaService.getPersonaById().subscribe((data) => {
+      this.persona = data;
+    });
+  }
 
   login() {
     this.router.navigate(['/login']);

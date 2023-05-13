@@ -11,6 +11,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,10 @@ import { LoginComponent } from './components/login/login.component';
     ProjectsComponent,
     SkillsComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
