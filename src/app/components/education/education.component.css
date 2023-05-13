@@ -1,0 +1,13 @@
+.card {
+  margin: 15px;
+}
+
+.item-educacion {
+  display: flex;
+  flex-direction: row;
+}
+.img-educacion {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}

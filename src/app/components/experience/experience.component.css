@@ -1,0 +1,14 @@
+.card {
+  margin: 15px;
+}
+
+.item-trabajo {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-trabajo {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
