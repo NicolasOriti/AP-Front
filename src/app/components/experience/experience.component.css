@@ -7,8 +7,18 @@
   flex-direction: row;
 }
 
-.img-trabajo {
+/* .img-trabajo {
   height: 64px;
   width: 64px;
   border-radius: 50%;
+} */
+
+.container {
+  margin-left: 0px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
